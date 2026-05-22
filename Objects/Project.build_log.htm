@@ -1,0 +1,153 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Omar Ayman, Ain shams university, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  C:\Users\StepOne\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.16.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\Users\StepOne\Desktop\Project\Project.uvprojx
+Project File Date:  05/22/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\StepOne\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+compiling consoleprint.c...
+compiling retarget.c...
+compiling basic_io.c...
+compiling main.c...
+compiling clib_os.c...
+compiling retarget_io.c...
+compiling os_systick.c...
+compiling cmsis_os2.c...
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+compiling freertos_evr.c...
+compiling list.c...
+compiling event_groups.c...
+compiling port.c...
+compiling heap_4.c...
+compiling queue.c...
+compiling timers.c...
+compiling tasks.c...
+linking...
+Program Size: Code=23440 RO-data=1612 RW-data=8 ZI-data=12040  
+".\Objects\Project.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.3.0.pack
+                ARM::CMSIS@6.3.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.2.0
+   * Component: SysTick Version: 1.0.5
+   * Component: OS Tick Version: 1.0.1
+   * Component: RTOS2 Version: 2.3.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.11.2.0.pack
+                ARM::CMSIS-FreeRTOS@11.2.0
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: FreeRTOS Variant: Cortex-M Version: 11.2.0
+   * Component: Config Variant: CMSIS RTOS2 Version: 11.2.0
+   * Component: Core Variant: Cortex-M Version: 11.2.0
+   * Component: Event Groups Version: 11.2.0
+   * Component: Heap Variant: Heap_4 Version: 11.2.0
+   * Component: Timers Version: 11.2.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
+                Keil::ARM_Compiler@1.7.2
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDIN Variant: ITM Version: 1.2.0
+   * Component: STDOUT Variant: ITM Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/RTOS
+  ./RTE/_Target_1
+  C:/Users/StepOne/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.2.0/CMSIS/RTOS2/FreeRTOS/Include
+  C:/Users/StepOne/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.2.0/Source/include
+  C:/Users/StepOne/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.2.0/Source/portable/GCC/ARM_CM4F
+  C:/Users/StepOne/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include
+  C:/Users/StepOne/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/RTOS2/Include
+  C:/Users/StepOne/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.2.0
+
+   * Component: ARM::CMSIS:OS Tick:SysTick@1.0.5
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
+
+   * Component: ARM::CMSIS:RTOS2:FreeRTOS&Cortex-M@11.2.0
+      Include file:  CMSIS/RTOS2/FreeRTOS/Include/freertos_mpool.h
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/clib_os.c
+
+   * Component: ARM::RTOS&FreeRTOS:Config&CMSIS RTOS2@11.2.0
+      Include file:  CMSIS/RTOS2/FreeRTOS/Config/FreeRTOSConfig.h
+
+   * Component: ARM::RTOS&FreeRTOS:Core&Cortex-M@11.2.0
+      Source file:   Source/list.c
+      Include file:  Source/include/task.h
+      Include file:  Source/include/queue.h
+      Source file:   Source/tasks.c
+      Include file:  Source/include/FreeRTOS.h
+      Source file:   Source/queue.c
+      Source file:   Source/portable/GCC/ARM_CM4F/port.c
+      Include file:  Source/include/semphr.h
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM::RTOS&FreeRTOS:Event Groups@11.2.0
+      Include file:  Source/include/event_groups.h
+      Source file:   Source/event_groups.c
+
+   * Component: ARM::RTOS&FreeRTOS:Heap&Heap_4@11.2.0
+      Source file:   Source/portable/MemMang/heap_4.c
+
+   * Component: ARM::RTOS&FreeRTOS:Timers@11.2.0
+      Include file:  Source/include/timers.h
+      Source file:   Source/timers.c
+
+   * Component: CMSIS:OS Tick(API)@1.0.1
+      Include file:  CMSIS/RTOS2/Include/os_tick.h
+
+   * Component: CMSIS:RTOS2(API)@2.3.0
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: Keil::Compiler&ARM Compiler:I/O:STDIN&ITM@1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Compiler&ARM Compiler:I/O:STDOUT&ITM@1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Device:Startup@1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
